@@ -16,6 +16,15 @@ class App < Sinatra::Base
         }.to_json
     end
 
+    post '/double/:num/:age/:year/:fruit' do
+        number = params[:num]
+        age = params[:age]
+        {
+            num: number,
+            age: age,
+            double: number.to_i * 2
+        }.to_json
+    end
 end
 
 run App
