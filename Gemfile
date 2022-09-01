@@ -12,6 +12,7 @@ gem 'sinatra-activerecord', '~> 2.0', '>= 2.0.25'
 
 gem 'require_all'
 
+gem 'puma'
 
 group :development do
     gem "rerun"
